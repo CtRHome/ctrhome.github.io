@@ -20,7 +20,7 @@
   }
 
     // Add all links
-    nav.appendChild(createLink("/", "", true, "https://ctrhome.github.io/img/logo_small.png"));
+    nav.appendChild(createLink("https://ctrhome.github.io/", "", true, "https://ctrhome.github.io/img/logo_small.png"));
     nav.appendChild(createLink("https://ctrhome.github.io/games", "Games"));
     nav.appendChild(createLink("https://ctrhome.github.io/about", "About"));
     nav.appendChild(createLink("https://ctrhome.github.io/fan-projects", "Fan Projects"));
