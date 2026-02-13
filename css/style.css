@@ -208,3 +208,8 @@ a {
             inset: 0; z-index: -999; opacity: 0.5;
             pointer-events: none;
         }
+
+.dev 
+{
+    border-radius: 25%;
+}
