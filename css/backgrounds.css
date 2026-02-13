@@ -12,11 +12,21 @@ body.default {
 
 /* normal version */
 body.default {
-    background-image: url("https://ctrhome.github.io/img/bgr.webp"),url("https://ctrhome.github.io/img/bgr2.webp");
+    
     background-color: #5D67A3;
+
+@media (min-width: 923px) {
+    background-image: url("https://ctrhome.github.io/img/bgr.webp"),url("https://ctrhome.github.io/img/bgr2.webp");
     background-size: 100vmax, 100vmax;
     background-repeat: no-repeat, repeat;
-} 
+}
+
+@media (max-width: 924px) {
+    background-image: url("https://ctrhome.github.io/img/bgr_mobile.webp"),url("https://ctrhome.github.io/img/bgr2_mobile.webp");
+    background-size: 100vw, 100vw;
+    background-repeat: no-repeat, repeat;
+}
+}
 
 
 body.candyflick {
