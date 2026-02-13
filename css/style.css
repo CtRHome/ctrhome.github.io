@@ -162,6 +162,15 @@ a {
         margin-right: 20px;
         margin-bottom: 20px;
     }
+
+        .socialpc 
+    {
+        display:block;
+    }
+    .socialmobile 
+    {
+        display:none;
+    }
 }
 
 @media (max-width: 924px) {
@@ -183,6 +192,14 @@ a {
         float: left;
         margin-right: 10px;
         margin-bottom: 10px;
+    }
+    .socialpc 
+    {
+        display:none;
+    }
+    .socialmobile 
+    {
+        display:block;
     }
 }
 
