@@ -133,6 +133,29 @@ a {
     text-decoration: none;
 }
 
+summary {
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(255, 253, 144);
+    text-decoration: none;
+    list-style:none;
+}
+
+details.showmore {
+width: fit-content;
+  summary::before {
+    content: attr(data-close); 
+    user-select: none;
+  }
+  &[open] summary::before {
+    content: attr(data-open);
+  }
+
+  background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding:10px;
+}
+
     a.recommended {
         color: yellow;
     }
