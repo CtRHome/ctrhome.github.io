@@ -146,6 +146,7 @@ width: fit-content;
   summary::before {
     content: attr(data-close); 
     user-select: none;
+    cursor: pointer;
   }
   &[open] summary::before {
     content: attr(data-open);
@@ -155,6 +156,7 @@ width: fit-content;
     border-radius: 15px;
     padding:10px;
 }
+
 
     a.recommended {
         color: yellow;
