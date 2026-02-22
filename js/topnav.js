@@ -1,19 +1,31 @@
 (function () {
 
+    var ran = false;
+
+    function runOnce(fn) {
+        if (ran) return;
+        ran = true;
+        fn();
+    }
+
     function onReady(fn) {
         if (document.readyState === "complete") {
-            fn();
+            runOnce(fn);
         } else if (document.addEventListener) {
-            document.addEventListener("DOMContentLoaded", fn, false);
-            window.onload = fn;
+            document.addEventListener("DOMContentLoaded", function () {
+                runOnce(fn);
+            }, false);
+            window.onload = function () {
+                runOnce(fn);
+            };
         } else {
-            window.attachEvent("onload", fn);
+            window.attachEvent("onload", function () {
+                runOnce(fn);
+            });
         }
     }
 
     onReady(function () {
-
-        /* ===== NAVBAR CODE (unchanged) ===== */
 
         var nav = document.createElement("div");
         nav.className = "topnav";
