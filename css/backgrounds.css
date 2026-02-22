@@ -157,6 +157,7 @@ body.ctr2 {
 body.holidaygift {
     background-image: url("/img/bgrchristmas1.png"),url("/img/bgrchristmas2.png");
     background-color: #5D67A3;
+    background-size: 100%, 100%;
     background-size: 100vmax, 100vmax;
     background-repeat: no-repeat, repeat;
     background-position: 0 0, 0 184vmax;
