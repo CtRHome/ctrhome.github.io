@@ -19,6 +19,10 @@ body {
     vertical-align: top;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .fandiv {
     text-align: center;
     display: inline-block;
