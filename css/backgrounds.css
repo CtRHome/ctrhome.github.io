@@ -14,11 +14,13 @@ body.default {
 body.default {
     
     background-color: #5D67A3;
-    background-image: url("https://ctrhome.github.io/img/bgr_mobile.jpg"),url("https://ctrhome.github.io/img/bgr2_mobile.jpg");
+    background-image: url("https://ctrhome.github.io/img/bgr_mobile.jpg"), url("https://ctrhome.github.io/img/bgr2_mobile.jpg");
+    background-size: 100%, 100%;
+    background-repeat: no-repeat, repeat;
 
 @media (min-width: 923px) {
     background-image: url("https://ctrhome.github.io/img/bgr.jpg"),url("https://ctrhome.github.io/img/bgr2.jpg");
-    background-size: 100vmax, 100vmax;
+    
     background-repeat: no-repeat, repeat;
     @supports (background-image: image-set(url("image.webp") 1x)) 
     {
@@ -46,11 +48,14 @@ body.candyflick {
 
 body.experiments {
     background-color: #08284d;
+    background-size:100%;
+    background-image: url("/img/expbg.jpg");
     .topnav {
     background-color: rgb(9, 54, 150);
     background-size: 100vw;
     background-repeat: repeat;
 }
+
 @media (min-width: 923px) {
     background-image: none;
     .expbg {
