@@ -1,4 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
+(function (fn) {
+    if (document.readyState === "complete") {
+        fn();
+    } else if (document.addEventListener) {
+        document.addEventListener("DOMContentLoaded", fn, false);
+        window.addEventListener("load", fn, false);
+    } else {
+        window.attachEvent("onload", fn);
+    }
+}(function () {
 
     // Create wrapper div
     var nav = document.createElement("div");
@@ -61,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var body = document.body;
     body.insertBefore(nav, body.firstChild);
 
-});
+}));
 
 (function() {
     function AddStars() {

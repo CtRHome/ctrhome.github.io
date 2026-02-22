@@ -14,6 +14,7 @@ body.default {
 body.default {
     
     background-color: #5D67A3;
+    background-image: url("https://ctrhome.github.io/img/bgr_mobile.jpg"),url("https://ctrhome.github.io/img/bgr2_mobile.jpg");
 
 @media (min-width: 923px) {
     background-image: url("https://ctrhome.github.io/img/bgr.jpg"),url("https://ctrhome.github.io/img/bgr2.jpg");
