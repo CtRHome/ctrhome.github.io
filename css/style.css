@@ -19,6 +19,10 @@ body {
     vertical-align: top;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .fandiv {
     text-align: center;
     display: inline-block;
@@ -57,12 +61,25 @@ body {
     display: inline-block;
     margin: 10px;
     width: 350px;
-    max-width: 350px;
+    max-width: 100%;
     vertical-align: top;
     justify-content: center; align-items: center;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 25px;
     padding-top: 10px;
+    
+}
+
+.white-rounded {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    width:fit-content;
+    vertical-align: top;
+    justify-content: center; align-items: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    padding: 10px;
     
 }
 
@@ -98,7 +115,6 @@ bottom: 0.5em; left: 2.5em;
 }
 
 .omnom {
-    max-width: 397px;
     width: 50vh;
 }
 
@@ -115,6 +131,7 @@ h3 {
 }
 
 h1 {
+    font-size: 100px; 
     font-size: clamp(20px, 100px, 100vw); /* min-size, preferred-size, max-size */
     margin: 10px;
     font-weight: normal;
@@ -146,6 +163,7 @@ width: fit-content;
   summary::before {
     content: attr(data-close); 
     user-select: none;
+    cursor: pointer;
   }
   &[open] summary::before {
     content: attr(data-open);
@@ -155,6 +173,7 @@ width: fit-content;
     border-radius: 15px;
     padding:10px;
 }
+
 
     a.recommended {
         color: yellow;
