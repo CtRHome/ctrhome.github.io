@@ -33,6 +33,9 @@
             <a href="https://x.com/ctrhome"><p>Follow us on Twitter</p></a>
             <p>For regular updates!</p>
         </div>
+        <p>For support or any inquiry you may have, email us to <a class="copy-email" href="#" title="Click to copy" data-copy="cuttheropehome@gmail.com">cuttheropehome@gmail.com</a>
+  <span id="copy-feedback" style="display: none; color: #4CAF50; font-size: 0.9em; margin-left: 5px;">Copied!</span>
+</p>
         <h2>Who we are</h2>
         <img src="/img/aidrum.jpg" width="150" class="dev"/> <img src="/img/susblue.jpg" width="150" class="dev"/>
         <p>Cut the Rope Home is made by <a href="https://twitter.com/mushroomfromgd">aidrum</a> and <a href="https://twitter.com/SusBlue">TheAwesomeBlue</a> as a place to share stuff for the Cut the Rope community.</p>
@@ -53,5 +56,15 @@
         <br>
         <p>ZeptoLab, Cut the Rope, Nommies and Om Nom are trademarks of ZeptoLab. We are not associated with ZeptoLab in any way, shape or form.</p>
     </center>
+
+    <script>
+document.querySelectorAll('.copy-email').forEach(el => {
+    el.addEventListener('click', () => {
+        navigator.clipboard.writeText(el.dataset.copy).then(() => {
+            alert('Copied to clipboard!');
+        });
+    });
+});
+</script>
 
 </body>
