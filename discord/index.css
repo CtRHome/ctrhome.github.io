@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "GoodDogNew";
+  src: url("/font/gooddog_new/gooddp__-webfont.woff2");
+  font-display: swap;
+}
+
+* {box-sizing: border-box}
+html, body {
+  margin: 0; padding: 0;
+  height: 100%; width: 100%;
+  background: #313338; overflow: hidden;
+  font-family: "GoodDogNew", sans-serif;
+  font-size: 16px; line-height: 16px;
+  color: #ffffff;
+  text-shadow: 3px 2px 0 #000000;
+  background-image: url(/img/bgr.webp);
+  background-size: cover;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+.ground {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  height: 14px;
+  background: #004fdf;
+  opacity: 0; z-index: 1;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+
+.page {
+  position: relative;
+  z-index: 2; top: 0;
+  display: flex; flex-direction: column;
+  height: 100%;
+  padding: 12px;
+}
+
+.back {
+  background-image:url(/img/button_back.png);
+  width:40px;
+  height:40px;
+  background-size: cover;
+}
+
+.top {
+  display: flex;
+  align-items: center; gap: 16px;
+  padding: 8px 14px;
+  background: saddlebrown;
+  color: #f2f3f5;
+}
+
+.presence {flex: 1}
+
+.join {
+  text-decoration: none;
+  padding: 9px 10px;
+  color: #ffffff;
+  background-image: url(/img/button.png);
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+.join:hover {background-image: url(/img/button_hover.png);}
+
+/*//////////////////////////////////////////////////////////////////////*/
+
+.panels {
+  display: flex; flex: 1;
+  min-height: 0;
+}
+
+.chat {
+  flex: 1; background-color: #36393f;
+  overflow: hidden;
+  background: transparent;
+  background-color: #36393F;
+}
+.chat widgetbot {
+  display: block;
+  width: 100%; height: 100%;
+}
+.chat iframe {
+  display: block;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+.members {
+  width: 260px;
+  display: flex; flex-direction: column;
+  background: rgba(43,45,49,0.8);
+  padding: 10px; min-height: 0;
+}
+
+.memberlist {
+  overflow-y: auto; flex: 1;
+  scrollbar-width: none;
+}
+.memberlist::-webkit-scrollbar {display: none}
+
+.member {
+  display: flex;
+  align-items: center; gap: 10px;
+  padding: 4px 6px;
+}
+.member:hover {background: rgba(255,255,255,0.06)}
+
+.avatarwrap {position: relative; flex-shrink: 0}
+.avatar {
+  width: 32px; height: 32px;
+  display: block;
+  border-radius: 100%;
+}
+.statusdot {
+  position: absolute;
+  right: -2px; bottom: -2px;
+  width: 12px; height: 12px;
+  border: 2px solid #2b2d31;
+  border-radius: 100%;
+}
+.statusdot.online {background: #23a55a}
+.statusdot.idle {background: #f0b232}
+.statusdot.dnd {background: #f23f43}
+.statusdot.offline {background: #80848e}
+
+.memberinfo {min-width: 0}
+.membername, .membergame {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.membererror {padding: 6px}
+
+@media (max-width: 800px) {
+  .members {display: none}
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+
+.servername {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+::selection {background-color: #3c64ff}
+
+/*//////////////////////////////////////////////////////////////////////*/
