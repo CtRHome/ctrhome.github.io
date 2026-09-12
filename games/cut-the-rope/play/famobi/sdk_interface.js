@@ -29,7 +29,7 @@ const SDK_INTERFACE_SETTINGS = {
 	},
 
 	// files to load
-	externalFiles: ["//games.cdn.famobi.com/scripts/microsoft-start/migrateStorage.js?v="+(Math.floor(new Date().getTime() / 600000)), "//assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.19.min.js", "sdk_interface_custom.js"],
+	externalFiles: ["migrateStorage.js?v="+(Math.floor(new Date().getTime() / 600000)), "msstart-v1.0.0-rc.19.min.js", "sdk_interface_custom.js"],
 
 	// features
 	features: {
